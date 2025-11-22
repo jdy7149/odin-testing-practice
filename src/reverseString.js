@@ -5,8 +5,8 @@ const reverseString = (str) => {
 
   while (left < right) {
     [strArr[left], strArr[right]] = [strArr[right], strArr[left]];
-    left--;
-    right++;
+    left++;
+    right--;
   }
 
   return strArr.join('');
